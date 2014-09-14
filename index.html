@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ben Leung - Web Developer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <!--
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="/static/css/override.css" rel="stylesheet">
+  -->
+  <!--
+    <link rel=stylesheet href="http://fonts.googleapis.com/css?family=Roboto:100,300,300italic,400,500,700,900">
+    -->
+    <link href="./static/css/style.css" rel="stylesheet">
+    <link href="./static/css/card-ui.css" rel="stylesheet">
+    <!-- script include -->
+    <script src="./static/js/jquery.js"></script>
+    <script src="./static/js/bootstrap.min.js"></script>
+    <script src="./static/js/card-ui.js"></script>
+  </head>
+  <body>
+
+<div class="container">
+	<div class="drawer">
+		<div class="wrapper">
+			<div class="profile-badge">
+				<div class="profile-pic center"></div>
+				<div class="my-name">
+					Ben Leung
+				</div>
+				<div>Web Developer</div>
+			</div>
+        <!--<p>Expertise in Nodejs, Mongodb</p>
+        <p>Double Degree Holder in Computer Science (BEng) and Business Management (BBA)</p>-->
+        <ul class="drawer-list">
+          <li></li>
+          <li><a href="mailto:benlcp@gmail.com">Email<i class="email"></i></a></li>
+          <li><a target="_blank" href="https://www.linkedin.com/profile/view?id=224758845">Linkedin<i class="linkedin"></i></a></li>
+          <li><a target="_blank" href="http://github.com/benleung">GitHub<i class="github"></i></a></li>
+          <li><a target="_blank" href="./files/benleung_cv.pdf">PDF Resume<i class="download"></i></a></li>
+        </ul>
+    </div>
+  </div>
+	<div class="fragment">
+
+	</div>
+</div>
+
+
+<script type="text/javascript">
+/*init first two card*/
+$(".card").slice(0,2).addClass("flow-in");
+
+$(".drawer-button").click(function(){
+	$(this).toggleClass("active");
+	$(this).focus();
+
+	//call the drawer
+	$(".drawer").toggleClass("slide-in");
+	$(".veil").toggleClass("active");
+});
+
+$(".drawer-button").focusout(function(){
+	$(this).removeClass("active");
+	$(".drawer").removeClass("slide-in");
+	$(".veil").removeClass("active");
+});
+
+/** TABs **/
+$(".tab-item").click(function(){
+
+	$('.active .card').removeClass('flow-in');
+	$('.active').removeClass('active').hide();
+
+	var href = $(this).attr('href');
+	var tab = '#tab_' + href.replace('#', '');
+
+	$(tab).addClass('active');
+
+	$(tab + " .card").slice(0,2).addClass("flow-in");
+	$(tab).show();
+});
+</script>
+</body>
+</html>
