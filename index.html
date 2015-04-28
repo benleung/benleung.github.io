@@ -12,7 +12,7 @@
     <meta name="description" content="A personal profile for a web developer">
     <meta name="keyword" content="web developer, programmer, ben leung, it specialist, technology">
     <meta name="author" content="Ben Leung">    
-    <!--<link rel="shortcut icon" href="favicon.ico">  -->
+    <link rel="shortcut icon" href="favicon.ico">
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
     <!-- Global CSS -->
@@ -37,7 +37,7 @@
     <!-- ******HEADER****** --> 
     <header class="header">
         <div class="container">                       
-            <img class="profile-image img-responsive pull-left" src="assets/images/profile.jpg" alt="Ben Leung" />
+            <img class="profile-image img-responsive pull-left img-circle" src="assets/images/profile.jpg" alt="Ben Leung" />
             <div class="profile-content pull-left">
                 <h1 class="name">Ben Leung</h1>
                 <h2 class="desc">Software Developer</h2>   
@@ -58,7 +58,7 @@
                     <div class="section-inner">
                         <h2 class="heading">About Me</h2>
                         <div class="content">
-                            <p>My name is Ben from Hong Kong. I recently graduated and I am a software technologist specialized in web applications. I have been participating in large-scale web development projects in Dow Jones, and I worked for OOCL, Intertek, etc. I am enthusiastic in learning technologies. Outside work, I often do research on technologies and build interesting tools. I am also fascinated in studying and applying the best practice in different areas, including software management, design patterns, time management, or even note-taking.</p>
+                            <p>My name is Ben from Hong Kong. I recently graduated and I am a software technologist specialized in web applications. I have been participating in large-scale web development projects in Dow Jones, and I worked for OOCL, Intertek, etc. I am enthusiastic in learning technologies. Outside work, I often do research on technologies and build interesting tools. I am also fascinated in studying and applying the best practice in different areas, including software management, design patterns, time management.</p>
                         </div><!--//content-->
                     </div><!--//section-inner-->                 
                 </section><!--//section-->
@@ -120,6 +120,19 @@
                                     <p>arthome.hk is a website to introduce a ceramics workshop in Fo Tan. It includes a class enrollment system for participants to enroll in class. I'm recently involved in the site redesign. The website is now under construction.</p>
                                 </div>                       
                             </div>-->
+
+                            <div class="item row">
+                                <a class="col-md-4 col-sm-4 col-xs-12">
+                                <img class="img-responsive project-image" src="assets/images/projects/project-6.png" alt="project name" />
+                                </a>
+                                <div class="desc col-md-8 col-sm-8 col-xs-12">
+                                    <h3 class="title"><a href="http://hkipo.herokuapp.com" target="_blank">HK IPO Analytical Tool</a></h3>
+                                    <p>An interactive graph to visualize the relationship between rate of oversubscription and performance of stock of IPO price on the first day. This is a self-interest project to help me with investing. </p>
+                                    <p><b>Technology: Nodejs, cheerio (data scrapping), canvasjs (data visualization)</b></p>
+                                    <p><a class="more-link" href="http://hkipo.herokuapp.com" target="_blank"><i class="fa fa-external-link"></i> Find out more</a></p>
+                                </div><!--//desc-->                          
+                            </div><!--//item-->
+                            
                             <div class="item row">
                                 <a class="col-md-4 col-sm-4 col-xs-12">
                                 <img class="img-responsive project-image" src="assets/images/projects/project-5.png" alt="project name" />
@@ -160,10 +173,9 @@
                                 <img class="img-responsive project-image" src="assets/images/projects/project-1.png" alt="project name" />
                                 </a>
                                 <div class="desc col-md-8 col-sm-8 col-xs-12">
-                                    <h3 class="title"><a href="http://ihome.ust.hk/~su_ipsu/cgi-bin/aboutUs.php" target="_blank">Interdisciplinary Program Student's Union</a></h3>
-                                    <p>This is my early project when I was the information systems secretary of IPSU, I designed the website to introduce the society to HKUST students and publish the latest news. The website is currently maintained by IPSU commmittee members of exisiting session. </p>
+                                    <h3 class="title">Interdisciplinary Program Student's Union<span class="label label-theme">Closed</span></h3>
+                                    <p>This is my early project when I was the information systems secretary of IPSU, I designed the website to introduce the society to HKUST students and publish iour latest news. </p>
                                     <p><b>Technology: PHP</b></p>
-                                    <p><a class="more-link" href="http://ihome.ust.hk/~su_ipsu/cgi-bin/aboutUs.php" target="_blank"><i class="fa fa-external-link"></i> Find out more</a></p>
                                     
                                 </div><!--//desc-->                          
                             </div><!--//item-->
@@ -191,12 +203,12 @@
                     <div class="section-inner">
                         <h2 class="heading">Coding Skills</h2>
                         <div class="content">
-                            <p class="intro">I specialize in web development, with experience in responsive design, SEO implementation.</p><!--data visualization-->
+                            <p class="intro">I specialize in web development, with experience in responsive design, SEO implementation, internationalization.</p><!--data visualization-->
                             
                             <div class="skillset">
                                
                                 <div class="item">
-                                    <h3 class="level-title">Node.js &amp; MongoDB<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="You can use the tooltip to add more info...">Pro</span></h3>
+                                    <h3 class="level-title">Node.js &amp; MongoDB<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="" data-original-title="Currently full-time working with this on daily basis. Experience in building large-scale applications (wsj.com)"><i class="fa fa-info-circle"></i></span></h3>
                                     <div class="level-bar">
                                         <div class="level-bar-inner" data-level="70%">
                                         </div>                                      
@@ -212,7 +224,7 @@
                                 </div>-->
                                 
                                 <div class="item">
-                                    <h3 class="level-title">PHP &amp; MySQL<span class="level-label">Pro</span></h3>
+                                    <h3 class="level-title">PHP &amp; MySQL<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="" data-original-title="4+ years experience in developing multiple small applications (inc. fyp, student helpers, part time jobs) with this"><i class="fa fa-info-circle"></i></span></h3>
                                     <div class="level-bar">
                                         <div class="level-bar-inner" data-level="70%">
                                         </div>                                      
@@ -220,7 +232,7 @@
                                 </div><!--//item-->
                                 
                                 <div class="item">
-                                    <h3 class="level-title">ASP.NET &amp; SQL Server<span class="level-label">Pro</span></h3>
+                                    <h3 class="level-title">ASP.NET &amp; SQL Server<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="" data-original-title="Studied in university, used in some part-time jobs."><i class="fa fa-info-circle"></i></span></h3>
                                     <div class="level-bar">
                                         <div class="level-bar-inner" data-level="65%">
                                         </div>                                      
@@ -228,7 +240,7 @@
                                 </div><!--//item-->
                                 
                                 <div class="item">
-                                    <h3 class="level-title">Java<span class="level-label">Pro</span></h3>
+                                    <h3 class="level-title">Java<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="" data-original-title="Studied in university, and occsaionally used during my current job. "><i class="fa fa-info-circle"></i></span></h3>
                                     <div class="level-bar">
                                         <div class="level-bar-inner" data-level="65%">
                                         </div>                                      
@@ -237,7 +249,7 @@
 
                                 
                                 <div class="item">
-                                    <h3 class="level-title">Python, C++, C<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="" data-original-title="I used to be good at these but haven't used for some time"><i class="fa fa-info-circle"></i></span></</h3>
+                                    <h3 class="level-title">Python, C++, C<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="" data-original-title="Studied in university, and used during summer intern, but haven't used for some time"><i class="fa fa-info-circle"></i></span></h3>
                                     <div class="level-bar">
                                         <div class="level-bar-inner" data-level="50%">
                                         </div>                                      
